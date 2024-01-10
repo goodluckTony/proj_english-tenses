@@ -1,10 +1,22 @@
 {
   "files": {
-    "main.js": "/proj_english-tenses/static/js/main.661a2ce1.js",
+    "main.css": "/proj_english-tenses/static/css/main.18086ead.css",
+    "main.js": "/proj_english-tenses/static/js/main.20dd3ff1.js",
+    "static/media/course-bg.svg": "/proj_english-tenses/static/media/course-bg.ac7c5220dcc013165ffb.svg",
+    "static/media/author-bg.png": "/proj_english-tenses/static/media/author-bg.def9fe80cbd2e5073ed0.png",
+    "static/media/result-bg.png": "/proj_english-tenses/static/media/result-bg.67b4eb42bff1ad1972ca.png",
+    "static/media/about-photo.svg": "/proj_english-tenses/static/media/about-photo.a2d45c9495953d2ed230.svg",
+    "static/media/d-1.png": "/proj_english-tenses/static/media/d-1.d139406045cec31858b1.png",
+    "static/media/d-2.png": "/proj_english-tenses/static/media/d-2.ff197229dd097803b274.png",
+    "static/media/d-4.png": "/proj_english-tenses/static/media/d-4.a25ccac98bbb842bb388.png",
+    "static/media/d-3.png": "/proj_english-tenses/static/media/d-3.d1aaeeb55efb9b5bb749.png",
+    "static/media/check-icon.svg": "/proj_english-tenses/static/media/check-icon.a2ed43b6c8a254e0d9db.svg",
     "index.html": "/proj_english-tenses/index.html",
-    "main.661a2ce1.js.map": "/proj_english-tenses/static/js/main.661a2ce1.js.map"
+    "main.18086ead.css.map": "/proj_english-tenses/static/css/main.18086ead.css.map",
+    "main.20dd3ff1.js.map": "/proj_english-tenses/static/js/main.20dd3ff1.js.map"
   },
   "entrypoints": [
-    "static/js/main.661a2ce1.js"
+    "static/css/main.18086ead.css",
+    "static/js/main.20dd3ff1.js"
   ]
 }
