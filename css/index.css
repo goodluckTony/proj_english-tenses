@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@700&family=Taprom&display=swap");
+html,
+body, * {
+  margin: 0;
+  padding: 0;
+}
+
+body { /* ??? */
+  min-width: 360px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 128px;
+}/*# sourceMappingURL=index.css.map */

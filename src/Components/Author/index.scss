@@ -1,0 +1,104 @@
+@import "../../assets/style/index.scss";
+
+.author-container {
+  // width: 100%;
+  padding-bottom: 50px;
+
+  .box {
+    padding: 120px 103px;
+    display: flex;
+    gap: 50px;
+
+    .bg {
+      width: 38%;
+      background-image: url("../../assets/img/author/author-bg.png");
+      background-position: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // width: 100%;
+      height: auto;
+    }
+
+    .title {
+      width: 62%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      h2 {
+        color: $color-black;
+        font-family: $family-manrope;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 57.6px */
+      }
+
+      .title-text {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        h3 {
+          color: $color-black;
+          font-family: $family-manrope;
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+  
+        .title-list {
+          // display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          // align-items: center;
+          display: flex;
+          // gap: 7.5px;
+          justify-content: center;
+
+  
+          .title-list-item {
+            display: inline-block;
+            // flex-direction: row;
+            color: $color-black;
+            font-family: $family-manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+
+            &::before {
+              content: "";
+              display: inline-block;
+              // flex-direction: row;
+              margin-right: 20px;
+              background-image: url("../../assets/img/result/check-icon.svg");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          .title-sublist {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 0 40px;
+
+            .title-sublist-item {
+              color: $color-black;
+              font-family: $family-manrope;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%; /* 24px */
+            }
+          }
+        }
+      }
+    }
+  }
+}

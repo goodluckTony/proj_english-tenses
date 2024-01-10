@@ -1,0 +1,153 @@
+@import "../../assets/style/index.scss";
+
+// .container {
+//   margin: 0;
+//   width: 100%;
+//   box-sizing: border-box;
+
+// }
+
+.footer-container {
+  width: 100%;
+  // padding-top: 50px;
+  
+  .box {
+    background-color: $color-rich-black;
+    padding: 60px 128px 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    p, h2 {
+      color: $color-white;
+      font-family: $family-manrope;
+    }
+    
+    h2 {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+
+    .top-box {
+      display: flex;
+      justify-content: space-between;
+
+      .logo-box {
+
+        h2 {}
+      }
+
+      .menu-box {
+
+        h2 {}
+
+        .menu-subbox {
+
+          p {}
+        }
+      }
+
+      .resource-box {
+
+        h2 {}
+
+        .resource-subbox {
+
+          p {}
+        }
+      }
+
+      .register-box {
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h2 {}
+
+        input {
+          // width: 100%;
+          // display: block;
+          padding: 14px 16px;
+          align-items: center;
+          gap: 10px;
+          border: 1px solid $color-white;
+          background:none;
+
+          color: $color-dim-gray;
+          text-align: start;
+          font-family: $family-manrope;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 22.5px */
+        }
+
+        button {
+          // display: block;
+          // display: flex;
+          // align-items: center;
+          // gap: -24px;
+          // align-self: stretch;
+          
+          // width: 100%;
+          // display: block;
+          padding: 13px 36px;
+          // justify-content: center;
+          align-items: center;
+          gap: 10px;
+          // flex: 1 0 0;
+          background: var(--Orange, #FFA471);
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+
+          color: var(--Black, #000);
+          font-family: Manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+        }
+
+        .register-subbox {
+          display: flex;
+
+          p {}
+
+          .social-box {
+            display: flex;
+
+            .insta-icon {
+              background-image: url("../../assets/img/footer/insta-icon.svg");
+              width: 23px;
+              height: 23px;
+            }
+
+            .fb-icon {
+              background-image: url("../../assets/img/footer/fb-icon.svg");
+              width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-box {
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+

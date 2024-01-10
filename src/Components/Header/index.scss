@@ -1,0 +1,59 @@
+ @import "../../assets/style/index.scss";
+
+.header-container {
+  
+  .box {
+    padding-top: 32px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo-box {
+
+      .logo-icon {
+        color: $color-black;
+        font-family: $family-manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  
+    .links-list {
+      display: flex;
+      gap: 23px;
+  
+      .links-item {
+        color: $color-black;
+        font-family: $family-manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  
+    .btn-box {
+  
+      .btn {
+        display: flex;
+        padding: 13px 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: $color-light-salmon;
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+        border: none;
+  
+        color: $color-black;
+        font-family: $family-manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

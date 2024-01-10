@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@700&family=Taprom&display=swap');
+
+$family-montserrat: "Montserrat", sans-serif;
+$family-inter: "Inter", sans-serif;
+$family-taprom: "Taprom", system-ui;
+$family-manrope: "Manrope", sans-serif;
+$family-dmsans: "DM sans", sans-serif;
+
+$color-light-salmon: #FFA471;
+$color-black: #000000;
+$color-dim-gray: #6B6B6B;
+$color-white: #FFFFFF;
+$color-ghost-white: #F9F9F9;
+$color-rich-black: #030303;
+
+
+html, 
+body, * { 
+  margin: 0; padding: 0; 
+}
+
+body { /* ??? */
+  min-width: 360px;
+  // max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  // width: 100%;
+  margin: 0 128px;
+}
+
+// .container {
+//   // margin: 0 auto;
+//   // padding: 0 150px;
+//   width: 100%;
+// }
+
