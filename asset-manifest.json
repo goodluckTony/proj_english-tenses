@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/proj_english-tenses/static/css/main.18086ead.css",
+    "main.css": "/proj_english-tenses/static/css/main.a73a9d65.css",
     "main.js": "/proj_english-tenses/static/js/main.20dd3ff1.js",
     "static/media/course-bg.svg": "/proj_english-tenses/static/media/course-bg.ac7c5220dcc013165ffb.svg",
     "static/media/author-bg.png": "/proj_english-tenses/static/media/author-bg.def9fe80cbd2e5073ed0.png",
@@ -12,11 +12,11 @@
     "static/media/d-3.png": "/proj_english-tenses/static/media/d-3.d1aaeeb55efb9b5bb749.png",
     "static/media/check-icon.svg": "/proj_english-tenses/static/media/check-icon.a2ed43b6c8a254e0d9db.svg",
     "index.html": "/proj_english-tenses/index.html",
-    "main.18086ead.css.map": "/proj_english-tenses/static/css/main.18086ead.css.map",
+    "main.a73a9d65.css.map": "/proj_english-tenses/static/css/main.a73a9d65.css.map",
     "main.20dd3ff1.js.map": "/proj_english-tenses/static/js/main.20dd3ff1.js.map"
   },
   "entrypoints": [
-    "static/css/main.18086ead.css",
+    "static/css/main.a73a9d65.css",
     "static/js/main.20dd3ff1.js"
   ]
 }
