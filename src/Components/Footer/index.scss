@@ -43,26 +43,57 @@
 
       .logo-box {
 
-        h2 {}
+        h2 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
       }
 
       .menu-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
-        h2 {}
+        h2 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
 
         .menu-subbox {
 
-          p {}
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+          }
         }
       }
 
       .resource-box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
-        h2 {}
+        h2 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
 
         .resource-subbox {
 
-          p {}
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+          }
         }
       }
 
@@ -72,7 +103,12 @@
         flex-direction: column;
         gap: 16px;
 
-        h2 {}
+        h2 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
 
         input {
           // width: 100%;
@@ -119,12 +155,21 @@
         }
 
         .register-subbox {
+          // width: 30%;
           display: flex;
+          justify-content: space-between;
+          gap: 55px;
 
-          p {}
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+          }
 
           .social-box {
             display: flex;
+            gap: 12px;
 
             .insta-icon {
               background-image: url("../../assets/img/footer/insta-icon.svg");
