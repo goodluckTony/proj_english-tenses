@@ -3,7 +3,7 @@ import "./index.scss";
 
 const Description = () => {
   return (
-    <div className='description-container container'>
+    <div className='description-container container' id='description'>
       <div className='description-box'>
         <div className='title'>
           <h2>Опис курсу</h2>

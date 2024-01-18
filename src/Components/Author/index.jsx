@@ -3,7 +3,7 @@ import "./index.scss";
 
 const Author = () => {
   return (
-    <div className='author-container container'>
+    <div className='author-container container' id='author'>
       <div className='box'>
         <div className='bg'></div>
         <div className='title'>

@@ -10,11 +10,11 @@ const Header = () => {
           <p className='logo-icon'>LOGO</p>
         </div>
         <ul className='links-list'>
-          <li className='links-item'>Для кого курс?</li>
-          <li className='links-item'>Про курс</li>
-          <li className='links-item'>Опис курсу</li>
-          <li className='links-item'>Що ти отримаєш?</li>
-          <li className='links-item'>Про автора</li>
+          <li className='links-item'><a href="#target">Для кого курс?</a></li>
+          <li className='links-item'><a href="#about">Про курс</a></li>
+          <li className='links-item'><a href="#description">Опис курсу</a></li>
+          <li className='links-item'><a href="#result">Що ти отримаєш?</a></li>
+          <li className='links-item'><a href="#author">Про автора</a></li>
         </ul>
         <div className='btn-box'>
           <button className='btn'>Записатися</button>

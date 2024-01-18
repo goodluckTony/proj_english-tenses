@@ -3,7 +3,7 @@ import "./index.scss";
 
 const Target = () => {
   return (
-    <div className='target-container container'>
+    <div className='target-container container' id='target'>
       <div className='target-box'>
         <div className='title'>
           <h2>Кому підходить?</h2>

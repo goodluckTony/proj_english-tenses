@@ -35,7 +35,7 @@ footer, header, hgroup, main, menu, nav, section {
     display: none;
 }
 body {
-	display: block;
+	/* display: block; */
 	line-height: 1;
 }
 menu, ol, ul {
