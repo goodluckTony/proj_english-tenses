@@ -40,47 +40,46 @@
       // width: 40%;
       width: 200px;
       height: 200px;
-      background-image: url("../../assets/img/target/target-btn.png");
+      background-image: url("../../assets/img/target/target-btn-1.png");
       // border-radius: 50%;
       // border: 2px solid #000;
       // position: relative;
-
       align-self: center;
 
-      .text {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: justify;
+      // .text {
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   text-align: justify;
 
-        span {
-          display: inline-block;
-          position: absolute;
-          font-size: 14px; /* Adjust as needed */
-          transform-origin: 50% 100%;
+      //   span {
+      //     display: inline-block;
+      //     position: absolute;
+      //     font-size: 14px; /* Adjust as needed */
+      //     transform-origin: 50% 100%;
 
-          color: $color-black;
-          font-family: $family-manrope;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          text-transform: uppercase;
+      //     color: $color-black;
+      //     font-family: $family-manrope;
+      //     font-size: 18px;
+      //     font-style: normal;
+      //     font-weight: 500;
+      //     line-height: normal;
+      //     text-transform: uppercase;
 
-          &:nth-child(1) {
-            display: flex;
-            width: 11.937px;
-            height: 24.868px;
-            transform: rotate(1.769deg);
-            flex-direction: column;
-            justify-content: center;
-            flex-shrink: 0;
-          }
-        }
-      }
+      //     &:nth-child(1) {
+      //       display: flex;
+      //       width: 11.937px;
+      //       height: 24.868px;
+      //       transform: rotate(1.769deg);
+      //       flex-direction: column;
+      //       justify-content: center;
+      //       flex-shrink: 0;
+      //     }
+      //   }
+      // }
     }
   }
 }
