@@ -6,9 +6,9 @@ const Lessons = () => {
     <div className="lessons-container container">
       <div className="lessons_box">
         <h2 className="lessons_title">Опис уроків</h2>
-        <ul className="lessons_list-box">
-          <li className="lessons_list">
-            <div>
+        <ul className="lessons_list">
+          <li className="lessons_item-box">
+            <div className="item-wrapper">
               <span>01</span> 
             </div>
             <p>
@@ -25,8 +25,10 @@ const Lessons = () => {
               напам’ять! Отакої!
             </p>
           </li>
-          <li className="lessons_list">
-            <span>02</span>
+          <li className="lessons_item-box">
+            <div className="item-wrapper">
+              <span>02</span>
+            </div>
             <p>
               У цьому відео-уроці детальніше розглядаються часові конструкції
               теперішнього аспекту та випадки контекстуальних вживань часів
@@ -39,8 +41,10 @@ const Lessons = () => {
               персонажем - равликом Едді!
             </p>
           </li>
-          <li className="lessons_list">
-            <span>03</span>
+          <li className="lessons_item-box">
+            <div className="item-wrapper">
+              <span>03</span>
+            </div>
             <p>
               Цей відео-урок демонструє логіку побудови часів минулого аспекту
               та випадки контекстуальних вживань Past Simple, Past Continuous,
@@ -54,8 +58,10 @@ const Lessons = () => {
               неминуче трапляються на усіх етапах навчання.
             </p>
           </li>
-          <li className="lessons_list">
-            <span>04</span>
+          <li className="lessons_item-box">
+            <div className="item-wrapper">
+              <span>04</span>
+            </div>
             <p>
               Завершальний відео-урок цього міні курсу не лише дасть вичерпні
               відповіді на запитання, що стосуються аспекту майбутнього,
