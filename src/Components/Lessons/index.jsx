@@ -6,9 +6,11 @@ const Lessons = () => {
     <div className="lessons-container container">
       <div className="lessons_box">
         <h2 className="lessons_title">Опис уроків</h2>
-        <div className="lessons_list-box">
-          <div className="lessons_list">
-            <span>01</span>
+        <ul className="lessons_list-box">
+          <li className="lessons_list">
+            <div>
+              <span>01</span> 
+            </div>
             <p>
               Знайомить вас з потужним концентратом даних про три аспекти часів
               та усі характерні для них категорії. За допомогою цікавих
@@ -22,8 +24,8 @@ const Lessons = () => {
               легкістю зрозумієте як створити потрібну, не завчаючи її
               напам’ять! Отакої!
             </p>
-          </div>
-          <div className="lessons_list">
+          </li>
+          <li className="lessons_list">
             <span>02</span>
             <p>
               У цьому відео-уроці детальніше розглядаються часові конструкції
@@ -36,8 +38,8 @@ const Lessons = () => {
               завдання на уважність помічником Хельги, вигаданим кумедним
               персонажем - равликом Едді!
             </p>
-          </div>
-          <div className="lessons_list">
+          </li>
+          <li className="lessons_list">
             <span>03</span>
             <p>
               Цей відео-урок демонструє логіку побудови часів минулого аспекту
@@ -51,8 +53,8 @@ const Lessons = () => {
               допомогою завдання та розберете імовірно допущені помилки, які
               неминуче трапляються на усіх етапах навчання.
             </p>
-          </div>
-          <div className="lessons_list">
+          </li>
+          <li className="lessons_list">
             <span>04</span>
             <p>
               Завершальний відео-урок цього міні курсу не лише дасть вичерпні
@@ -67,8 +69,8 @@ const Lessons = () => {
               категорій, що безумовно слугуватиме вам надійною підказкою у
               потрібний момент.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   );
