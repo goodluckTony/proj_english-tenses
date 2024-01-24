@@ -1,11 +1,16 @@
  @import "../../assets/style/index.scss";
 
-.header-container {
+.header-container { 
+  background-color: $color-white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
   
-  // flex-shrink: 0;
-  .box {
+  .header-box {
     padding-top: 32px;
-    padding-bottom: 80px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,37 +27,116 @@
         line-height: normal;
       }
     }
-  
-    .links-list {
+
+    .header__menu-content-box {
       display: flex;
-      gap: 16px;
 
-      // display: inline-flex;
-      // align-items: flex-start;
+      .header-nav-menu {
 
+        .links-list {
+          display: flex;
+          gap: 16px;
+      
+          .links-item {
+            color: $color-black;
+            font-family: $family-manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
   
-      .links-item {
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+          }
+        }
+      }
+  
+      .btn-box {
+    
+        .btn {
+          display: flex;
+          padding: 13px 36px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-color: $color-light-salmon;
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+          border: none;
+    
+          color: $color-black;
+          font-family: $family-manrope;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+
+    .menu-icon-open {
+      display: none;
+      width: 50px;
+      height: 50px;
+      background-image: url("../../assets/img/header/menu-open.png");
+    }
+  }
+
+  .menu-box{
+    background-color: $color-white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu__logo-box{
+    
+      .menu__logo-icon{
+        color: $color-black;
+        font-family: $family-manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      
+      }
+
+      .menu-icon-close {
+        background-image: url("../../assets/img/header/menu-close.png");
+      }
+    }
+    .menu__links-list{      
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    
+      .menu__links-item{
         color: $color-black;
         font-family: $family-manrope;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-
+      
         a {
           text-decoration: none;
           color: inherit;
         }
       }
     }
-  
-    .btn-box {
-      // display: inline-flex;
-      // align-items: center;
-      // gap: -24px;
-      // align-items: self-end;
-  
-      .btn {
+    .menu__btn-box{
+    
+      .menu__btn{
         display: flex;
         padding: 13px 36px;
         justify-content: center;
@@ -68,6 +152,96 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .header-container { 
+    
+    .box {
+      
+      .logo-box {
+        
+  
+        .logo-icon {
+        }
+      }
+    
+      .links-list {
+    
+        .links-item {
+  
+          a {
+          }
+        }
+      }
+    
+      .btn-box {
+    
+        .btn {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-container { 
+    
+    .box {
+      
+      .logo-box {
+        
+  
+        .logo-icon {
+        }
+      }
+    
+      .links-list {
+    
+        .links-item {
+  
+          a {
+          }
+        }
+      }
+    
+      .btn-box {
+    
+        .btn {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container { 
+    
+    .box {
+      
+      .logo-box {
+        
+  
+        .logo-icon {
+        }
+      }
+    
+      .links-list {
+    
+        .links-item {
+  
+          a {
+          }
+        }
+      }
+    
+      .btn-box {
+    
+        .btn {
+        }
       }
     }
   }

@@ -1,69 +1,65 @@
 @import "../../assets/style/index.scss";
 
 .diplomas-container {
-  // margin-top: 50px;
   padding-bottom: 100px;
   
   .box {
     background: var(--Grey-8, #F9F9F9);
     padding: 120px 103px;
-    // width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-
+    // display: flex;
+    // flex-direction: column;
+    // gap: 50px;
+    
     h2 {
+      margin-bottom: 50px;
       color: $color-black;
       font-family: $family-manrope;
       font-size: 48px;
       font-style: normal;
       font-weight: 600;
-      line-height: 120%; /* 57.6px */
+      line-height: 120%;
     }
 
     .box-img {
-      // width: 100%;
       display: flex;
-      // flex-wrap: wrap;
       gap: 20px;
-      // justify-content: space-between;
-      overflow: hidden;
-      height: 262px;
-
-      .img {
-        height: 100%; /* Make all images take up 100% of the container height */
-        // width: 20%; /* Allow images to scale proportionally */
-        object-fit: cover;
-        // display: ;
-        background-size: contain;
-        background-repeat: no-repeat;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      // @include onTablet {
+      //   flex-wrap: wrap;
+      // }
+      
+      img {
         // height: 262px;
-        // width: 100%;
-        // object-fit: cover;
-        // width: calc(10% - 20px); /* Adjust width based on the number of images per row */
-        /* You can adjust the width calculation to fit the number of images you want per row */
-        /* Subtracting the gap (20px) from the width to maintain spacing */
-      }
-
-      .img:nth-child(1) {
-        background-image: url("../../assets/img/diplomas/d-1.png");
-        width: 40%;
-      }
-
-      .img:nth-child(2) {
-        background-image: url("../../assets/img/diplomas/d-2.png");
         width: 20%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        // object-fit: contain;
+        border: none;
+        outline: none;
       }
 
-      .img:nth-child(3) {
-        background-image: url("../../assets/img/diplomas/d-3.png");
-        width: 20%;
-      }
+      // .img:nth-child(1) {
+      //   background-image: url("../../assets/img/diplomas/d-1.png");
+      //   // width: 40%;
+      // }
 
-      .img:nth-child(4) {
-        background-image: url("../../assets/img/diplomas/d-4.png");
-        width: 20%;
-      }
+      // .img:nth-child(2) {
+      //   background-image: url("../../assets/img/diplomas/d-2.png");
+      //   // width: 20%;
+      // }
+
+      // .img:nth-child(3) {
+      //   background-image: url("../../assets/img/diplomas/d-3.png");
+      //   // width: 20%;
+      // }
+
+      // .img:nth-child(4) {
+      //   background-image: url("../../assets/img/diplomas/d-4.png");
+      //   // width: 20%;
+      // }
     }
   }
 }

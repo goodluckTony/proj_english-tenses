@@ -13,24 +13,28 @@
     
     
     .about-photo {
-      display: flex;
-      // width: 35%;    
+      width: 40%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      border: none;
+      outline: none;   
 
-      &::before {
-        content: "";
-        display: block;
-        background: url("../../assets/img/about/about-photo.svg"), no-repeat;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        width: 364px;
-        height: 402px;
-        // object-fit: contain;
-      }
+      // &::before {
+      //   content: "";
+      //   display: block;
+      //   background: url("../../assets/img/about/about-photo.svg"), no-repeat;
+      //   background-size: cover;
+      //   background-repeat: no-repeat;
+      //   background-position: 50% 50%;
+      //   width: 364px;
+      //   height: 402px;
+      //   // object-fit: contain;
+      // }
     }
 
     .about-title {
-      width: 100%;
+      width: 60%;
       // padding-right: 150px;
 
       h2 {
