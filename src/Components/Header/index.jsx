@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 // import "../../assets/style/index.scss";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className='header-container container'>
-      <div className="header-box">
+      <div className="header-box" id='header'>
         <div className='logo-box'>
           <p className='logo-icon'>LOGO</p>
         </div>
@@ -22,14 +27,14 @@ const Header = () => {
           <div className='btn-box'>
             <button className='btn'>Записатися</button>
           </div>
-          <a className='menu-icon-open' href="#menu"></a>
         </div>
+        <a className='menu-icon-open' href="#menu"></a>
       </div>
 
       <aside className='menu-box' id='menu'>
         <div className='menu__logo-box'>
           <h2 className='menu__logo-icon'>LOGO</h2>
-          <a className='menu-icon-close' href=""></a>
+          <a className='menu-icon-close' href="#"></a>
         </div>
         <nav>
           <ul className='menu__links-list'>
