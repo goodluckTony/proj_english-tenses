@@ -123,18 +123,28 @@
 
   .bg-container {
     display: flex;
+    align-self: center;
     width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    // background-position: 25%;
+    // display: block;
 
-    &::before {
-      content: "";
-      // display: block;
-      background: url("../../assets/img/course/course-bg.svg"), no-repeat;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      width: 100%;
+
+    // display: flex;
+    // width: 50%;
+
+    // &::before {
+    //   content: "";
+    //   // display: block;
+    //   background: url("../../assets/img/course/course-bg.svg"), no-repeat;
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   background-position: 50% 50%;
+    //   width: 100%;
       
-      object-fit: cover;
-    }
+    //   object-fit: cover;
+    // }
   }
 }

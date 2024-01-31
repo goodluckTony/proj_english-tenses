@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import titleImg from '../../assets/img/course/course-bg.svg';
 
 const Course = () => {
   return (
@@ -22,8 +23,7 @@ const Course = () => {
           <p>Задоволених <br />студентів</p>
         </div>
       </div>
-      <div className='bg-container'>
-      </div>
+      <img className='bg-container' src={titleImg} alt='course-img'/>
     </div>
   )
 }

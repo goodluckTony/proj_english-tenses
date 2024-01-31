@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <div className='header-container container'>
+    <div className={`header-container container ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="header-box" id='header'>
         <div className='logo-box'>
           <p className='logo-icon'>LOGO</p>
@@ -28,13 +28,13 @@ const Header = () => {
             <button className='btn'>Записатися</button>
           </div>
         </div>
-        <a className='menu-icon-open' href="#menu"></a>
+        <a className='menu-icon-open' onClick={toggleMenu} href="#menu"></a>
       </div>
 
-      <aside className='menu-box' id='menu'>
+      <aside className={`menu-box ${isMenuOpen ? 'open' : ''}`} id='menu'>
         <div className='menu__logo-box'>
           <h2 className='menu__logo-icon'>LOGO</h2>
-          <a className='menu-icon-close' href="#"></a>
+          <a className='menu-icon-close' href="#" onClick={toggleMenu}></a>
         </div>
         <nav>
           <ul className='menu__links-list'>
