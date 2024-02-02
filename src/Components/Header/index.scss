@@ -101,6 +101,11 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+
+    .menu-icon-open,
+    .menu-icon-close {
+      transition: opacity 0.5s ease;
+    }
   }
 
   .menu-box{
@@ -122,9 +127,12 @@
 
     &.open {
       display: flex;
+      opacity: 1;
+      transition: opacity 0.3s ease;
     }
 
     .menu__logo-box{
+      display: flex;
     
       .menu__logo-icon{
         color: $color-black;
@@ -143,6 +151,9 @@
         background-image: url("../../assets/img/header/menu-close.png");
         background-repeat: no-repeat;
         background-size: contain;
+
+        top: 0;
+        right: 0;
       }
     }
 
@@ -295,6 +306,7 @@
   
     .menu-box{
       display: none;
+      opacity: 0;
 
       &.open {
 

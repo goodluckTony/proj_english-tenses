@@ -4,8 +4,13 @@ import './index.scss';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -37,7 +42,7 @@ const Header = () => {
           <a className='menu-icon-close' href="#" onClick={toggleMenu}></a>
         </div>
         <nav>
-          <ul className='menu__links-list'>
+          <ul className='menu__links-list' onClick={closeMenu}>
             <li className='menu__links-item'><a href="#target">Для кого курс?</a></li>
             <li className='menu__links-item'><a href="#about">Про курс</a></li>
             <li className='menu__links-item'><a href="#description">Опис курсу</a></li>
