@@ -9,15 +9,10 @@
     display: flex;
     gap: 50px;
 
-    .bg {
-      // display: block;
-      width: 100%;
-      // min-width: 370px;
-      background-image: url("../../assets/img/author/author-bg-2.jpg");
-      background-position: 25%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      // width: 100%;
+    .author-img {
+      width: 30%;
+      object-fit: cover;
+      object-position: 25%;
       height: auto;
     }
 

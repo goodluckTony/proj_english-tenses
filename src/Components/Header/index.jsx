@@ -7,6 +7,9 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+
+    // const menu = document.getElementById('menu');
+    // menu.classList.toggle('open');
   };
 
   const closeMenu = () => {
@@ -14,7 +17,8 @@ const Header = () => {
   };
 
   return (
-    <div className={`header-container container ${isMenuOpen ? 'menu-open' : ''}`}>
+    // <div className={`header-container container ${isMenuOpen ? 'menu-open' : ''}`}>
+    <div className="header-container">
       <div className="header-box" id='header'>
         <div className='logo-box'>
           <p className='logo-icon'>LOGO</p>

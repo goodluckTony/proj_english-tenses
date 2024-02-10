@@ -45,10 +45,11 @@
       // border: 2px solid #000;
       // position: relative;
       align-self: center;
-      transition: background-image 0.3s ease;
+      transition: transform 0.5s;
       
       &:hover {
         background-image: url("../../assets/img/target/target-btn-2.png");
+        transform: scale(1.1);
       }
 
       // .text {

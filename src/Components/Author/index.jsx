@@ -1,11 +1,13 @@
 import React from 'react';
 import "./index.scss";
+import AuthorImg from "../../assets/img/author/author-bg-2.jpg";
 
 const Author = () => {
   return (
     <div className='author-container container' id='author'>
       <div className='box'>
-        <div className='bg'></div>
+        {/* <div className='bg'></div> */}
+        <img className='author-img' src={AuthorImg} alt="Author-Img" />
         <div className='title'>
           <h2>Про автора</h2>
           <div className='title-text'>

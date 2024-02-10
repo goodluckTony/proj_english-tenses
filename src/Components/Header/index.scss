@@ -2,11 +2,15 @@
 
 .header-container { 
   background-color: $color-white;
-  position: fixed;
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
   z-index: 10;
+
+  margin: 0 128px;
+
+
   
   .header-box {
     padding-top: 32px;
@@ -104,7 +108,6 @@
 
     .menu-icon-open,
     .menu-icon-close {
-      transition: opacity 0.5s ease;
     }
   }
 
@@ -121,14 +124,29 @@
     padding-bottom: 32px;
 
     display: none;
+    
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: center;   
+    
     &.open {
       display: flex;
+      // transform: translateX(-100px);  
       opacity: 1;
-      transition: opacity 0.3s ease;
+      // overflow: visible;
+
+
+      // opacity: 0;
+      // transition: transform 2s;
+      // transform: translate(0);
+
+      &.open:target {
+        // transform: translate(0);
+        // z-index: 100;
+        // transition: transform .5s;
+      // opacity: 1;
+
+      }
     }
 
     .menu__logo-box{
@@ -154,7 +172,7 @@
 
         position: absolute;
         // top: 0;
-        right: 20px;
+        right: 128px;
 
 
         margin-right: 0;
@@ -203,10 +221,18 @@
       }
     }
   }
+
+  // .open {
+  //   opacity: 1;
+  //   transition: transform 0.5s;
+  //   transform: opacity 0.3s ease; 
+  //   // opacity: 1;
+  // }
 }
 
 @media (max-width: 1440px) {
   .header-container { 
+    margin: 0 100px;
     
     .header-box {
       
@@ -252,6 +278,7 @@
         }
   
         .menu-icon-close {
+          right: 0 70px;
         }
       }
       .menu__links-list{      
@@ -273,6 +300,7 @@
 
 @media (max-width: 1024px) {
   .header-container { 
+    margin: 0 70px;
     
     .header-box {
       
@@ -311,8 +339,9 @@
     }
   
     .menu-box{
-      display: none;
-      opacity: 0;
+      // display: none;
+      // opacity: 0;
+      // overflow: hidden;
 
       &.open {
 
@@ -323,11 +352,11 @@
 
       &.menu-open {
         .header__menu-content-box {
-          display: flex;
+          // display: flex;
         }
 
         .menu-box {
-          display: flex;
+          // display: flex;
         }
       }
   
@@ -338,6 +367,7 @@
   
         .menu-icon-close {
           // display: block;
+          right: 70px;
         }
       }
       .menu__links-list{      
@@ -359,6 +389,7 @@
 
 @media (max-width: 768px) {
   .header-container { 
+    margin: 0 10px;
     
     .header-box {
       
@@ -401,6 +432,7 @@
         }
   
         .menu-icon-close {
+          right: 10px;
         }
       }
       .menu__links-list{      

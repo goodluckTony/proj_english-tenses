@@ -22,15 +22,31 @@ body, * {
 
 body { /* ??? */
   // max-width: 1440px;
-  min-width: 360px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
 .container {
-  min-width: 320px;
+  // min-width: 320px;
   // max-width: 1440px;
   // width: 100%;
   margin: 0 128px;
+}
+@media (max-width: 1440px) {
+  .container {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin: 0 70px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
 }
 
 // .container {
@@ -38,6 +54,7 @@ body { /* ??? */
 //   // padding: 0 150px;
 //   width: 100%;
 // }
+
 
 @mixin onDesktop {
   @media (max-width: 1440px) {

@@ -9,9 +9,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 28px 60px;
+
+    @include onTablet {
+      flex-direction: column;
+    }
     
 
     h2 {
+      // display: block;
       // margin-right: 50px;
       color: $color-white;
       font-family: $family-manrope;
@@ -19,29 +24,49 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal; 
-    }
 
-    h3 {
-      color: $color-white;
-      font-family: $family-manrope;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-
-      span {
-        color: $color-light-salmon;
-        text-decoration: line-through;
+      @include onDesktop {
+        font-size: 18px;
       }
     }
 
-    h4 {
-      color: $color-white;
-      font-family: $family-manrope;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 130%; /* 62.4px */
+    .box-timer {
+      display: flex;
+      gap: 20px;
+
+      h3 {
+        align-self: center;
+
+        color: $color-white;
+        font-family: $family-manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @include onDesktop {
+          font-size: 16px;
+        }
+  
+        span {
+          color: $color-light-salmon;
+          text-decoration: line-through;
+        }
+      }
+  
+      h4 {
+        color: $color-white;
+        font-family: $family-manrope;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 62.4px */
+        flex-shrink: 0;
+
+        @include onDesktop {
+          font-size: 25px;
+        }
+      }
     }
   }
 }

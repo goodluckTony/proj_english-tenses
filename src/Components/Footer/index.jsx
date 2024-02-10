@@ -6,9 +6,9 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='box'>
         <div className='top-box'>
-          <div className='logo-box'>
+          {/* <div className='logo-box'>
             <h2>LOGO</h2>
-          </div>
+          </div> */}
           <div className='menu-box'>
             <h2>Меню</h2>
             <ul className='menu-subbox'>
@@ -30,7 +30,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className='register-box'>
-            <h2>Зареєструйся на курс</h2>
+            <h2 className='register-title'>Зареєструйся на курс</h2>
             <input type="text"
             placeholder='Введіть email' />
             <button>Записатися</button>
