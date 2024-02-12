@@ -39,6 +39,14 @@
         // object-fit: contain;
         border: none;
         outline: none;
+
+        @include onTablet {
+          width: 47%;
+        }
+
+        @include onMobile {
+          width: 100%;
+        }
       }
 
       // .img:nth-child(1) {
