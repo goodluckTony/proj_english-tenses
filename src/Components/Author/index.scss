@@ -9,11 +9,19 @@
     display: flex;
     gap: 50px;
 
+    @include onTablet {
+      flex-direction: column;
+    }
+
     .author-img {
       width: 30%;
       object-fit: cover;
       object-position: 25%;
       height: auto;
+
+      @include onTablet {
+        width: 100%;
+      }
     }
 
     .title {

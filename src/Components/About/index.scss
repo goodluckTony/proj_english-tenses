@@ -10,6 +10,10 @@
     display: flex;
     gap: 41px;
     align-items: center;
+
+    @include onTablet {
+      flex-direction: column;
+    }
     
     
     .about-photo {
@@ -19,6 +23,10 @@
       display: block;
       border: none;
       outline: none;   
+
+      @include onTablet {
+        width: 100%;
+      }
 
       // &::before {
       //   content: "";
@@ -36,6 +44,14 @@
     .about-title {
       width: 60%;
       // padding-right: 150px;
+      
+      @include onTablet {
+        width: 100%;
+
+        h2, p {
+          text-align: justify;
+        }
+      }
 
       h2 {
         color: $color-black;
