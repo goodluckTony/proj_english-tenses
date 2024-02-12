@@ -193,10 +193,26 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        position: relative;
       
         a {
           text-decoration: none;
           color: inherit;
+        }
+
+        a:hover {
+          font-weight: 600;
+        }
+
+        a:hover::before {
+          content: "";
+          width: 30%;
+          height: 1.5px;
+          background-color: $color-black;
+          position: absolute;
+          bottom: -4px;
+          left: 0;
         }
       }
     }
