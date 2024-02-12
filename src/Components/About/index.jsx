@@ -5,7 +5,7 @@ import aboutPhoto from "../../assets/img/about/about-photo.svg";
 const About = () => {
   return (
     <div className='about-container container' id='about'>
-      <div className='about-box'>
+      <div className='about-box box'>
         <img className='about-photo' src={aboutPhoto} alt="about-course" />
         <div className='about-title'>
           <h2>Про курс</h2>

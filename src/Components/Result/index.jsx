@@ -4,7 +4,7 @@ import "./index.scss";
 const Result = () => {
   return (
     <div className="result-container container" id='result'>
-      <div className="box">
+      <div className="result-box box">
         <div className="bg"></div>
         <div className="title-box">
           <h2>Що ви отримаєте після проходження курсу?</h2>

@@ -5,7 +5,7 @@ import AuthorImg from "../../assets/img/author/author-bg-2.jpg";
 const Author = () => {
   return (
     <div className='author-container container' id='author'>
-      <div className='box'>
+      <div className='author-box box'>
         {/* <div className='bg'></div> */}
         <img className='author-img' src={AuthorImg} alt="Author-Img" />
         <div className='title'>

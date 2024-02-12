@@ -32,9 +32,18 @@ body { /* ??? */
   // width: 100%;
   margin: 0 128px;
 }
+
+.box {
+  padding: 120px 103px;
+}
+
 @media (max-width: 1440px) {
   .container {
     margin: 0 100px;
+  }
+
+  .box {
+    padding: 90px 77.25px;
   }
 }
 
@@ -42,10 +51,18 @@ body { /* ??? */
   .container {
     margin: 0 70px;
   }
+
+  .box {
+    padding: 60px 51.5px;
+  }
 }
 @media (max-width: 768px) {
   .container {
     margin: 0 10px;
+  }
+
+  .box {
+    padding: 30px 25.75px;
   }
 }
 
@@ -54,6 +71,8 @@ body { /* ??? */
 //   // padding: 0 150px;
 //   width: 100%;
 // }
+
+
 
 
 @mixin onDesktop {

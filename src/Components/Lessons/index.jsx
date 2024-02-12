@@ -4,7 +4,7 @@ import "./index.scss";
 const Lessons = () => {
   return (
     <div className="lessons-container container">
-      <div className="lessons_box">
+      <div className="lessons_box box">
         <h2 className="lessons_title">Опис уроків</h2>
         <ul className="lessons_list">
           <li className="lessons_item-box">

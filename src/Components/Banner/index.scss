@@ -3,7 +3,7 @@
 .banner-container {
   padding-bottom: 34px;
   
-  .box {
+  .banner-box {
     background: $color-black;
     display: flex;
     justify-content: space-between;
@@ -33,6 +33,10 @@
     .box-timer {
       display: flex;
       gap: 20px;
+
+      @include onMobile {
+        flex-direction: column;
+      }
 
       h3 {
         align-self: center;

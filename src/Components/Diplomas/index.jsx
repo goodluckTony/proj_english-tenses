@@ -9,7 +9,7 @@ import d4 from "../../assets/img/diplomas/d-4.png";
 const Diplomas = () => {
   return (
     <div className="diplomas-container container">
-      <div className="box">
+      <div className="diplomas-box box">
         <h2>Дипломи</h2>
         <div className="box-img">
           <img src={d5} alt="d5" />
