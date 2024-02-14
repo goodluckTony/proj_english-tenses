@@ -13,6 +13,10 @@
     @include onTablet {
       flex-direction: column;
     }
+
+    @include onMobile {
+      gap: 15px;
+    }
     
 
     h2 {
@@ -27,6 +31,10 @@
 
       @include onDesktop {
         font-size: 18px;
+      }
+
+      @include onMobile {
+        text-align: center;
       }
     }
 

@@ -33,10 +33,18 @@
       h2 {
         color: $color-black;
         font-family: $family-manrope;
-        font-size: 48px;
+        // font-size: 48px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%; /* 57.6px */
+
+        // @include onTablet {
+        //   font-size: 40px;
+        // }
+
+        // @include onMobile {
+        //   font-size: 30px;
+        // }
       }
 
       ul {
@@ -76,13 +84,18 @@
             // margin-right: 20px;
             width: 24px;
             height: 24px;
+
+            @include onMobile {
+              width: 15px;
+              height: 15px;
+            }
           }
 
-          span {
+          p {
             // padding-left: 20px;
             color: $color-black;
             font-family: $family-manrope;
-            font-size: 16px;
+            // font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%; /* 24px */

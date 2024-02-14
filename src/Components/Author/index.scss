@@ -33,10 +33,18 @@
       h2 {
         color: $color-black;
         font-family: $family-manrope;
-        font-size: 48px;
+        // font-size: 48px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%; /* 57.6px */
+
+        // @include onTablet {
+        //   font-size: 40px;
+        // }
+
+        // @include onMobile {
+        //   font-size: 30px;
+        // }
       }
 
       .title-text {
@@ -51,6 +59,10 @@
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+
+          @include onMobile {
+            font-size: 23px;
+          }
         }
   
         .title-list {
@@ -75,17 +87,21 @@
               background-image: url("../../assets/img/result/check-icon.svg");
               background-size: contain;
               background-repeat: no-repeat;
-              width: 24px;
-              height: 24px;
+              width: 15px;
+              height: 15px;
             }
             
-            span {
+            p {
               color: $color-black;
               font-family: $family-manrope;
-              font-size: 16px;
+              // font-size: 16px;
               font-style: normal;
               font-weight: 400;
               line-height: 150%; /* 24px */
+
+              // @include onMobile {
+              //   font-size: 12px;
+              // }
             }
 
             // &::before {
@@ -109,12 +125,19 @@
             margin: 0 40px;
 
             .title-sublist-item {
-              color: $color-black;
-              font-family: $family-manrope;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%; /* 24px */
+
+              p {
+                color: $color-black;
+                font-family: $family-manrope;
+                // font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+  
+                // @include onMobile {
+                //   font-size: 12px;
+                // }
+              }
             }
           }
         }

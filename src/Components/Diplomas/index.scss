@@ -14,10 +14,18 @@
       margin-bottom: 50px;
       color: $color-black;
       font-family: $family-manrope;
-      font-size: 48px;
+      // font-size: 48px;
       font-style: normal;
       font-weight: 600;
       line-height: 120%;
+
+      // @include onTablet {
+      //   font-size: 40px;
+      // }
+
+      // @include onMobile {
+      //   font-size: 30px;
+      // }
     }
 
     .box-img {

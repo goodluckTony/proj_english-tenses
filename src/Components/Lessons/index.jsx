@@ -5,13 +5,13 @@ const Lessons = () => {
   return (
     <div className="lessons-container container">
       <div className="lessons_box box">
-        <h2 className="lessons_title">Опис уроків</h2>
+        <h2 className="lessons_title heading2">Опис уроків</h2>
         <ul className="lessons_list">
           <li className="lessons_item-box">
             <div className="item-wrapper">
               <span>01</span> 
             </div>
-            <p>
+            <p className='paragraph'>
               Знайомить вас з потужним концентратом даних про три аспекти часів
               та усі характерні для них категорії. За допомогою цікавих
               схематичних пояснень ви довідаєтеся як розпізнавати графічні
@@ -29,7 +29,7 @@ const Lessons = () => {
             <div className="item-wrapper">
               <span>02</span>
             </div>
-            <p>
+            <p className='paragraph'>
               У цьому відео-уроці детальніше розглядаються часові конструкції
               теперішнього аспекту та випадки контекстуальних вживань часів
               Present Simple, Present Continuous, Present Perfect та Present
@@ -45,7 +45,7 @@ const Lessons = () => {
             <div className="item-wrapper">
               <span>03</span>
             </div>
-            <p>
+            <p className='paragraph'>
               Цей відео-урок демонструє логіку побудови часів минулого аспекту
               та випадки контекстуальних вживань Past Simple, Past Continuous,
               Past Perfect та Past Perfect Continuous у стверджувальних,
@@ -62,7 +62,7 @@ const Lessons = () => {
             <div className="item-wrapper">
               <span>04</span>
             </div>
-            <p>
+            <p className='paragraph'>
               Завершальний відео-урок цього міні курсу не лише дасть вичерпні
               відповіді на запитання, що стосуються аспекту майбутнього,
               побудови елементів його часових форм і властивих йому додаткових

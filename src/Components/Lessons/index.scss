@@ -12,10 +12,18 @@
     .lessons_title {
       color: $color-black;
       font-family: $family-manrope;
-      font-size: 48px;
+      // font-size: 48px;
       font-style: normal;
       font-weight: 600;
       line-height: 120%; /* 57.6px */
+
+      // @include onTablet {
+      //   font-size: 40px;
+      // }
+
+      // @include onMobile {
+      //   font-size: 30px;
+      // }
     }
 
     .lessons_list {
@@ -31,6 +39,7 @@
         @include onTablet {
           flex-direction: column;
           align-items: flex-start;
+          padding: 40px 0;
         }
 
         .item-wrapper {
@@ -59,7 +68,7 @@
         p {
           color: $color-dim-gray;
           font-family: $family-dmsans;
-          font-size: 16px;
+          // font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: 24px; /* 150% */

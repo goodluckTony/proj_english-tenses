@@ -10,7 +10,7 @@ const Diplomas = () => {
   return (
     <div className="diplomas-container container">
       <div className="diplomas-box box">
-        <h2>Дипломи</h2>
+        <h2 className='heading2'>Дипломи</h2>
         <div className="box-img">
           <img src={d5} alt="d5" />
           <img src={d2} alt="d2" />

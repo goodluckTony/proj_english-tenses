@@ -56,17 +56,25 @@
       h2 {
         color: $color-black;
         font-family: $family-manrope;
-        font-size: 48px;
+        // font-size: 48px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%; /* 57.6px */
+
+        // @include onTablet {
+        //   font-size: 40px;
+        // }
+
+        // @include onMobile {
+        //   font-size: 30px;
+        // }
       }
 
       p {
         margin-top: 32px;
         color: $color-dim-gray;
         font-family: $family-inter;
-        font-size: 16px;
+        // font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
