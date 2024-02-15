@@ -165,12 +165,13 @@
   }
 
   .bg-box {
-    background-image: url("../../assets/img/course/course-bg.svg");
+    // background-image: url("../../assets/img/course/course-bg.svg");
+    background-image: url("../../assets/img/course/course-bg-2.png");
     display: flex;
     width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 0%;
+    // background-position: 50% 0%;
     
 
     @include onTablet {
@@ -181,8 +182,8 @@
   }
 }
 
-@media (max-width: 1440px) {}
+// @media (max-width: 1440px) {}
 
-@media (max-width: 1024px) {}
+// @media (max-width: 1024px) {}
 
-@media (max-width: 768px) {}
+// @media (max-width: 768px) {}

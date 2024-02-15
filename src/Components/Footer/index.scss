@@ -46,15 +46,15 @@
         }
       }
 
-      // .logo-box {
+      .logo-box {
 
-      //   h2 {
-      //     font-size: 20px;
-      //     font-style: normal;
-      //     font-weight: 700;
-      //     line-height: normal;
-      //   }
-      // }
+        h2 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
 
       .menu-box {
         display: flex;
@@ -136,21 +136,21 @@
           line-height: normal;
         }
 
-        input {
-          padding: 14px 16px;
-          align-items: center;
-          gap: 10px;
-          border: 1px solid $color-white;
-          background:none;
+        // input {
+        //   padding: 14px 16px;
+        //   align-items: center;
+        //   gap: 10px;
+        //   border: 1px solid $color-white;
+        //   background:none;
 
-          color: $color-dim-gray;
-          text-align: start;
-          font-family: $family-manrope;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
+        //   color: $color-dim-gray;
+        //   text-align: start;
+        //   font-family: $family-manrope;
+        //   font-size: 15px;
+        //   font-style: normal;
+        //   font-weight: 400;
+        //   line-height: 150%;
+        // }
 
         button {
           padding: 13px 36px;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
-import titleImg from '../../assets/img/course/course-bg.svg';
+// import titleImg from '../../assets/img/course/course-bg.svg';
+// import titleImg from '../../assets/img/course/course-bg-2.png';
 
 const Course = () => {
   return (

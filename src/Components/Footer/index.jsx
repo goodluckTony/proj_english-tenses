@@ -6,9 +6,9 @@ const Footer = () => {
     <div className='footer-container'>
       <div className='box'>
         <div className='top-box'>
-          {/* <div className='logo-box'>
+          <div className='logo-box'>
             <h2>LOGO</h2>
-          </div> */}
+          </div>
           <div className='menu-box'>
             <h2>Меню</h2>
             <ul className='menu-subbox'>
@@ -19,7 +19,7 @@ const Footer = () => {
               <li><a href="#author">Про автора</a></li>
             </ul>
           </div>
-          <div className='resource-box'>
+          {/* <div className='resource-box'>
             <h2>Ресурси</h2>
             <ul className='resource-subbox'>
               <li>Help</li>
@@ -28,11 +28,11 @@ const Footer = () => {
               <li>Privacy Policy</li>
               <li>Term of Service</li>
             </ul>
-          </div>
+          </div> */}
           <div className='register-box'>
             <h2 className='register-title'>Зареєструйся на курс</h2>
-            <input type="text"
-            placeholder='Введіть email' />
+            {/* <input type="text"
+            placeholder='Введіть email' /> */}
             <button>Записатися</button>
             <div className='register-subbox'>
               <p>infoemaileamil@gmail.com</p>

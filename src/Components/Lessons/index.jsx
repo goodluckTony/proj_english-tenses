@@ -9,7 +9,7 @@ const Lessons = () => {
         <ul className="lessons_list">
           <li className="lessons_item-box">
             <div className="item-wrapper">
-              <span>01</span> 
+              <div className="lessons-1"></div>
             </div>
             <p className='paragraph'>
               Знайомить вас з потужним концентратом даних про три аспекти часів
@@ -27,7 +27,7 @@ const Lessons = () => {
           </li>
           <li className="lessons_item-box">
             <div className="item-wrapper">
-              <span>02</span>
+              <div className="lessons-2"></div>
             </div>
             <p className='paragraph'>
               У цьому відео-уроці детальніше розглядаються часові конструкції
@@ -43,7 +43,7 @@ const Lessons = () => {
           </li>
           <li className="lessons_item-box">
             <div className="item-wrapper">
-              <span>03</span>
+              <div className="lessons-3"></div>
             </div>
             <p className='paragraph'>
               Цей відео-урок демонструє логіку побудови часів минулого аспекту
@@ -60,7 +60,7 @@ const Lessons = () => {
           </li>
           <li className="lessons_item-box">
             <div className="item-wrapper">
-              <span>04</span>
+              <div className="lessons-4"></div>
             </div>
             <p className='paragraph'>
               Завершальний відео-урок цього міні курсу не лише дасть вичерпні
