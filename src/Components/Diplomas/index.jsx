@@ -1,38 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.scss";
-// import imagesData from "./images.json";
-import d5 from "../../assets/img/diplomas/d-5.png";
-import d2 from "../../assets/img/diplomas/d-2.png";
-import d3 from "../../assets/img/diplomas/d-3.png";
-import d4 from "../../assets/img/diplomas/d-4.png";
+// import { imageList } from "./imageList.jsx";
+import imageList from "./images.json";
 
 const Diplomas = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = (index) => {
+    setCurrentIndex(index);
+    setIsPopupOpen(true);
+  };
+  
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imageList.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + imageList.length) % imageList.length);
+  };
+
+  const renderImages = () => {
+    return imageList.map((image, index) => (
+      <img key={index} src={image.src} alt={image.alt} onClick={() => openPopup(index)} />
+    ));
+  };
+
   return (
     <div className="diplomas-container container">
       <div className="diplomas-box box">
         <h2 className='heading2'>Дипломи</h2>
-        <div className="box-img">
-          <img src={d5} alt="d5" />
-          <img src={d2} alt="d2" />
-          <img src={d3} alt="d3" />
-          <img src={d4} alt="d4" />
-
-          {/* {imagesData.map((image) => (
-            <img key={image.id} src={image.src} alt={image.alt} />
-          ))} */}
-
-          {/* <div className='img'></div>
-          <div className='img'></div>
-          <div className='img'></div>
-          <div className='img'></div> */}
-
-          {/* <img  src="../../assets/img/diplomas/d-2.png" alt='asd'/>
-          <img  src="../../assets/img/diplomas/d-3.png" />
-          <img  src="../../assets/img/diplomas/d-4.png" /> */}
+        <div className="slider">
+          {renderImages()}
         </div>
+        {isPopupOpen && (
+          <div className="popup">
+            <span className="close-btn" onClick={closePopup}>X</span>
+            <img src={imageList[currentIndex].src} alt={imageList[currentIndex].title} />
+            <button onClick={prevSlide}>Previous</button>
+            <div className="pagination">
+              {currentIndex + 1} / {imageList.length}
+            </div>
+            <button onClick={nextSlide}>Next</button>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
 export default Diplomas;
+
+// <div className="diplomas-container container">
+//   <div className="diplomas-box box">
+//     <h2 className='heading2'>Дипломи</h2>
+//     <div className="box-img">
+//       <img src={d5} alt="d5" />
+//       <img src={d2} alt="d2" />
+//       <img src={d3} alt="d3" />
+//       <img src={d4} alt="d4" />
+//     </div>
+//   </div>
+// </div>
