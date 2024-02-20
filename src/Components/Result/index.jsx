@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-const Result = () => {
+const Result = ({ redirectToRegistration }) => {
   return (
     <div className="result-container container" id='result'>
       <div className="result-box box">
@@ -45,7 +45,7 @@ const Result = () => {
               </p>
             </li>
           </ul>
-          <button>Записатися</button>
+          <button onClick={redirectToRegistration}>Записатися</button>
         </div>
       </div>
     </div>

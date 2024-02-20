@@ -1,21 +1,35 @@
 @import "../../assets/style/index.scss";
 
 .banner-container {
-  padding-bottom: 34px;
+  // padding-bottom: 34px;
+
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
   
   .banner-box {
     background: $color-black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 60px;
+    padding: 28px 128px;
+
+    @include onDesktop {
+      padding: 28px 100px;
+
+    }
 
     @include onTablet {
       flex-direction: column;
+      // padding: 28px 70px;
+
     }
 
     @include onMobile {
-      gap: 15px;
+      gap: 5px;
+      // padding: 5px 10px;
     }
     
 
@@ -34,53 +48,91 @@
       }
 
       @include onMobile {
+        font-size: 12px;
         text-align: center;
       }
     }
 
-    .box-timer {
-      display: flex;
-      gap: 20px;
+    h3 {
+      align-self: center;
 
-      @include onMobile {
-        flex-direction: column;
+      color: $color-white;
+      font-family: $family-manrope;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      flex-shrink: 0;
+
+      @include onDesktop {
+        font-size: 16px;
       }
 
-      h3 {
-        align-self: center;
-
-        color: $color-white;
-        font-family: $family-manrope;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+      span {
+        color: $color-light-salmon;
+        text-decoration: line-through;
         flex-shrink: 0;
-
-        @include onDesktop {
-          font-size: 16px;
-        }
-  
-        span {
-          color: $color-light-salmon;
-          text-decoration: line-through;
-          flex-shrink: 0;
-        }
-      }
-  
-      h4 {
-        color: $color-white;
-        font-family: $family-manrope;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%; /* 62.4px */
-        flex-shrink: 0;
-
-        @include onDesktop {
-          font-size: 40px;
-        }
       }
     }
+
+    h4 {
+      color: $color-white;
+      font-family: $family-manrope;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 130%; /* 62.4px */
+      flex-shrink: 0;
+
+      @include onDesktop {
+        font-size: 40px;
+      }
+    }
+
+    // .box-timer {
+    //   display: flex;
+    //   gap: 20px;
+
+    //   @include onMobile {
+    //     flex-direction: column;
+    //     gap: 5px;
+    //   }
+
+    //   h3 {
+    //     align-self: center;
+
+    //     color: $color-white;
+    //     font-family: $family-manrope;
+    //     font-size: 20px;
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     line-height: normal;
+    //     flex-shrink: 0;
+
+    //     @include onDesktop {
+    //       font-size: 16px;
+    //     }
+  
+    //     span {
+    //       color: $color-light-salmon;
+    //       text-decoration: line-through;
+    //       flex-shrink: 0;
+    //     }
+    //   }
+  
+    //   h4 {
+    //     color: $color-white;
+    //     font-family: $family-manrope;
+    //     font-size: 48px;
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     line-height: 130%; /* 62.4px */
+    //     flex-shrink: 0;
+
+    //     @include onDesktop {
+    //       font-size: 40px;
+    //     }
+    //   }
+    // }
   }
 }

@@ -3,7 +3,19 @@ import "./index.scss";
 // import { imageList } from "./imageList.jsx";
 import imageList from "./images.json";
 
+import Slider from "react-slick";
+import "./slick.css";
+import "./slick-theme.css";
+
 const Diplomas = () => {
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  };
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const extendedList = imageList;
@@ -48,7 +60,7 @@ const Diplomas = () => {
     <div className="diplomas-container container">
       <div className="diplomas-box box">
         <h2 className="heading2">Дипломи</h2>
-        <div className="carousel">
+        {/* <div className="carousel">
           <div className="slides">
             {items.map((image, index) => (
               <img key={index} src={image.src} alt={image.alt} />
@@ -65,6 +77,16 @@ const Diplomas = () => {
               &#10095;
             </button>
           </div>
+        </div> */}
+        
+        <div className="slider-container">
+          <Slider {...settings}>
+            {imageList.map((img, idx) => (
+              <div className="img-box" key={idx}>
+                <img key={idx} src={img.src} alt={img.alt} />
+              </div>
+            ))}
+          </Slider>
         </div>
 
         {/* <div className="slider">

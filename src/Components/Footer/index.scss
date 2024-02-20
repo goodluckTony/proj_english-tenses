@@ -7,7 +7,7 @@
   
   .box {
     margin: 0 128px;
-    padding: 60px 0 37px;
+    padding: 60px 0 127px;
     
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@
       margin: 0 10px;
       // justify-content: center;
       align-items: center;
+      padding: 60px 0 150px;
     }
 
     p, a, h2 {
@@ -183,11 +184,12 @@
           justify-content: space-between;
           gap: 55px;
 
-          p {
+          .email-link-btn {
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
+            cursor: pointer;
           }
 
           .social-box {
@@ -200,6 +202,11 @@
               height: 23px;
               background-repeat: no-repeat;
               background-size: contain;
+              cursor: pointer;
+              // fill: #FF8845;
+              // background-blend-mode: color;
+              // background-color: #FF8845;
+              // mix-blend-mode: color-burn;
             }
 
             .fb-icon {
@@ -208,6 +215,7 @@
               height: 23px;
               background-repeat: no-repeat;
               background-size: contain;
+              cursor: pointer;
             }
           }
         }

@@ -4,6 +4,10 @@
   // width: 100%;
   padding-bottom: 50px;
 
+  @include onMobile {
+    padding-bottom: 0;
+  }
+
   .description-box {
     // width: 50%;
     display: flex;

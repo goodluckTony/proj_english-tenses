@@ -12,20 +12,26 @@ import Author from "./Components/Author";
 import Diplomas from "./Components/Diplomas";
 import Footer from "./Components/Footer";
 
+
+
 function App() {
+  const redirectToRegistration = () => {
+    window.location.href = 'https://ad-astra-school.kwiga.com/courses/english-with-eddie';
+  };
+
   return (
     <div className="App">
-      <Header />
-      <Course />
+      <Header redirectToRegistration={redirectToRegistration}/>
+      <Course redirectToRegistration={redirectToRegistration}/>
       <Banner />
       <Target />
-      <About />
+      <About redirectToRegistration={redirectToRegistration}/>
       <Description />
       <Lessons />
-      <Result />
+      <Result redirectToRegistration={redirectToRegistration}/>
       <Author />
       <Diplomas />
-      <Footer />
+      <Footer redirectToRegistration={redirectToRegistration}/>
     </div>
   );
 }

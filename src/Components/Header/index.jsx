@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.scss';
 // import "../../assets/style/index.scss";
 
-const Header = () => {
+const Header = ({ redirectToRegistration }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -34,7 +34,7 @@ const Header = () => {
             </ul>
           </nav>
           <div className='btn-box'>
-            <button className='btn'>Записатися</button>
+            <button className='btn' onClick={redirectToRegistration}>Записатися</button>
           </div>
         </div>
         <a className='menu-icon-open' onClick={toggleMenu} href="#menu"></a>
@@ -55,7 +55,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className='menu__btn-box'>
-          <button className='menu__btn'>Записатися</button>
+          <button className='menu__btn' onClick={redirectToRegistration}>Записатися</button>
         </div>
       </aside>
     </div>

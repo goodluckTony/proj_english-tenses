@@ -13,6 +13,10 @@
     padding-top: 0;
   }
 
+  @include onMobile {
+
+  }
+
   .title-container {
     width: 50%;
     display: flex;
@@ -25,6 +29,10 @@
     @include onTablet {
       width: 100%;
       gap: 30px;
+    }
+
+    @include onMobile {
+      margin-top: 20px;
     }
 
     .title-top {
@@ -91,7 +99,7 @@
           gap: 10px;
         }
 
-        button:first-child {
+        .request-btn {
           // display: flex;
           padding: 13px 36px;
           // padding: 13px 0;
@@ -110,11 +118,18 @@
           font-weight: 500;
           line-height: normal;
 
+          &:hover {
+            background-color: #FF8845;
+          }
+
+          &:active {
+            background-color: #000000;
+            color: #FFFFFF;
+          }
+
           @include onMobile {
             padding: 13px 20px;
           }
-
-          
         }
   
         button:last-child {

@@ -1,7 +1,21 @@
 import React from 'react';
 import "./index.scss";
 
-const Footer = () => {
+const Footer = ({ redirectToRegistration }) => {
+  const handleEmail = () => {
+    window.location.href = 'mailto:infoemaileamil@gmail.com';
+  };
+
+  const handleInstagram = () => {
+    const instargamProfile = 'loki_disaster';
+    window.location.href = `https://www.instagram.com/${instargamProfile}/`;
+  };
+
+  const handleFacebook = () => {
+    const facebookProfile = '';
+    window.location.href = `https://www.facebook.com/${facebookProfile}`;
+  };
+
   return (
     <div className='footer-container'>
       <div className='box'>
@@ -19,26 +33,14 @@ const Footer = () => {
               <li><a href="#author">Про автора</a></li>
             </ul>
           </div>
-          {/* <div className='resource-box'>
-            <h2>Ресурси</h2>
-            <ul className='resource-subbox'>
-              <li>Help</li>
-              <li>Cookie Settings</li>
-              <li>IP Policy</li>
-              <li>Privacy Policy</li>
-              <li>Term of Service</li>
-            </ul>
-          </div> */}
           <div className='register-box'>
             <h2 className='register-title'>Зареєструйся на курс</h2>
-            {/* <input type="text"
-            placeholder='Введіть email' /> */}
-            <button>Записатися</button>
+            <button onClick={redirectToRegistration}>Записатися</button>
             <div className='register-subbox'>
-              <p>infoemaileamil@gmail.com</p>
+              <p className='email-link-btn' onClick={handleEmail}>infoemaileamil@gmail.com</p>
               <div className='social-box'>
-                <div className='insta-icon icon'></div>
-                <div className='fb-icon icon'></div>
+                <div className='insta-icon icon' onClick={handleInstagram}></div>
+                <div className='fb-icon icon' onClick={handleFacebook}></div>
               </div>
             </div>
           </div>

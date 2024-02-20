@@ -3,7 +3,10 @@ import './index.scss';
 // import titleImg from '../../assets/img/course/course-bg.svg';
 // import titleImg from '../../assets/img/course/course-bg-2.png';
 
-const Course = () => {
+const Course = ({ redirectToRegistration }) => {
+
+
+
   return (
     <div className='course-container container'>
       <div className='title-container'>
@@ -15,7 +18,7 @@ const Course = () => {
             Знайомтесь з новими друзями – Хельгою та равликом Едді, з якими ви не лише навчитесь секретиків, які так ретельно приховують часи англійської, а ще й неодмінно порозважаєтесь!</p>
           </div>
           <div className='buttons'>
-            <button>Зареєструватися</button>
+            <button className='request-btn' onClick={redirectToRegistration}>Зареєструватися</button>
             <button>Про курс</button>
           </div>
         </div>

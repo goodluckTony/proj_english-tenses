@@ -16,7 +16,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 62.4px */
-  flex-shrink: 0;
+  flex-shrink: 1;
 
   @include onDesktop {
     font-size: 35px;
@@ -24,7 +24,10 @@
 
   @include onTablet {}
 
-  @include onMobile {}
+  @include onMobile {
+    font-size: 30px;
+    // color: black;
+  }
 }
 
 // @media (max-width: 1440px) {
