@@ -167,6 +167,15 @@
           line-height: normal;
           border: none;
 
+          &:hover {
+            background-color: #FF8845;
+          }
+
+          &:active {
+            color: #ffffff;
+            background-color: #000000;
+          }
+
         }
 
         .register-subbox {
@@ -189,12 +198,16 @@
               background-image: url("../../assets/img/footer/insta-icon.svg");
               width: 23px;
               height: 23px;
+              background-repeat: no-repeat;
+              background-size: contain;
             }
 
             .fb-icon {
               background-image: url("../../assets/img/footer/fb-icon.svg");
               width: 23px;
               height: 23px;
+              background-repeat: no-repeat;
+              background-size: contain;
             }
           }
         }

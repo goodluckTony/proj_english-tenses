@@ -1,0 +1,51 @@
+// @import './../../style/index.scss';
+@import "../../assets/style/index.scss";
+
+.banner-timer {
+  // color: $font-white;
+
+  // font-family: $family-titillium-web;
+  // font-size: 48px;
+  // font-style: normal;
+  // font-weight: 700;
+  // line-height: 130%;
+
+  color: $color-white;
+  font-family: $family-manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 62.4px */
+  flex-shrink: 0;
+
+  @include onDesktop {
+    font-size: 35px;
+  }
+
+  @include onTablet {}
+
+  @include onMobile {}
+}
+
+// @media (max-width: 1440px) {
+//   .banner-timer {
+//     font-size: 32px;
+//   }
+//   .mail-timer {
+//   }
+// }
+// @media (max-width: 1024px) {
+//   .banner-timer {
+//     font-size: 40px;
+//   }
+//   .mail-timer {
+//     font-size: 48px;
+//   }
+// }
+// @media (max-width: 767px) {
+//   .banner-timer {
+//   }
+//   .mail-timer {
+//     font-size: 35px;
+//   }
+// }

@@ -28,35 +28,70 @@
       // }
     }
 
-    .slider {
+    .carousel {
       display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      
-      // @include onTablet {
-      //   flex-wrap: wrap;
-      // }
-      
-      img {
-        height: 262px;
-        width: 200px;
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        display: block;
-        object-fit: contain;
-        border: none;
-        outline: none;
+      flex-direction: column;
+      gap: 20px;
 
-        @include onTablet {
-          width: 47%;
-        }
+      .slides {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
 
-        @include onMobile {
-          width: 100%;
+        img {
+          height: 262px;
+          width: 20%;
+          // background-repeat: no-repeat;
+          // background-size: contain;
+          display: block;
+          object-fit: contain;
+          // border: none;
+          // outline: none;
         }
       }
+
+      .pagination-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .prev-btn {}
+
+        .pagination {}
+
+        .next-btn {}
+      }
     }
+
+    // .slider {
+    //   display: flex;
+    //   gap: 25px;
+    //   flex-wrap: wrap;
+    //   justify-content: space-between;
+      
+    //   // @include onTablet {
+    //   //   flex-wrap: wrap;
+    //   // }
+      
+    //   img {
+    //     height: 262px;
+    //     width: 200px;
+    //     // background-repeat: no-repeat;
+    //     // background-size: contain;
+    //     display: block;
+    //     object-fit: contain;
+    //     border: none;
+    //     outline: none;
+
+    //     @include onTablet {
+    //       width: 47%;
+    //     }
+
+    //     @include onMobile {
+    //       width: 100%;
+    //     }
+    //   }
+    // }
 
     // .box-img {
     //   display: flex;

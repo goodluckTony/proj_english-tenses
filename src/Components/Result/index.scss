@@ -121,6 +121,15 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        &:hover {
+          background-color: #FF8845;
+        }
+
+        &:active {
+          color: #ffffff;
+          background-color: #000000;
+        }
       }
     }
   }

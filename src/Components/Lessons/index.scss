@@ -47,7 +47,7 @@
           // width: 156px;
           // align-items: center;
           // gap: 24px;
-          margin-right: 46px;
+          // margin-right: 15px;
 
           // &:nth-child(1) {
           //   background-image: url("../../assets/img/lessons/1-icon.svg");
@@ -86,30 +86,30 @@
           // }
           
           .lessons-1 {
-            background-image: url("../../assets/img/lessons/1-icon.svg");
-            width: 110px;
-            height: 60px;
+            background-image: url("../../assets/img/lessons/1.2-icon.svg");
+            width: 200px;
+            height: 100px;
             background-repeat: no-repeat;
             background-size: contain;
           }
           .lessons-2 {
-            background-image: url("../../assets/img/lessons/2-icon.svg");
-            width: 110px;
-            height: 60px;
+            background-image: url("../../assets/img/lessons/2.2-icon.svg");
+            width: 200px;
+            height: 100px;
             background-repeat: no-repeat;
             background-size: contain;
           }
           .lessons-3 {
-            background-image: url("../../assets/img/lessons/3-icon.svg");
-            width: 110px;
-            height: 60px;
+            background-image: url("../../assets/img/lessons/3.2-icon.svg");
+            width: 200px;
+            height: 100px;
             background-repeat: no-repeat;
             background-size: contain;
           }
           .lessons-4 {
-            background-image: url("../../assets/img/lessons/4-icon.svg");
-            width: 110px;
-            height: 60px;
+            background-image: url("../../assets/img/lessons/4.2-icon.svg");
+            width: 200px;
+            height: 100px;
             background-repeat: no-repeat;
             background-size: contain;
           }
@@ -117,8 +117,8 @@
           @include onMobile {
             .lessons-1, .lessons-2,
             .lessons-3, .lessons-4 {
-              width: 90px;
-              height: 40px;
+              width: 110px;
+              height: 60px;
             }
           }
 

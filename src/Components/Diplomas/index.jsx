@@ -5,49 +5,82 @@ import imageList from "./images.json";
 
 const Diplomas = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const openPopup = (index) => {
-    setCurrentIndex(index);
-    setIsPopupOpen(true);
-  };
-  
-  const closePopup = () => {
-    setIsPopupOpen(false);
+  const extendedList = imageList;
+  // const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // const openPopup = (index) => {
+  //   setCurrentIndex(index);
+  //   setIsPopupOpen(true);
+  // };
+
+  // const closePopup = () => {
+  //   setIsPopupOpen(false);
+  // };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % imageList.length);
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % imageList.length);
+    setCurrentIndex((nextIndex) => (nextIndex + 1) % imageList.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + imageList.length) % imageList.length);
-  };
+  const numberOfItemsToDisplay = 4;
+  const numberOfItemsToTake = Math.min(
+    numberOfItemsToDisplay,
+    imageList.length - currentIndex
+  );
+  console.log(imageList);
+  const items = imageList
+    .slice(currentIndex, currentIndex + numberOfItemsToTake)
+    .concat(imageList.slice(0, numberOfItemsToDisplay - numberOfItemsToTake));
 
-  const renderImages = () => {
-    return imageList.map((image, index) => (
-      <img key={index} src={image.src} alt={image.alt} onClick={() => openPopup(index)} />
-    ));
-  };
+  console.log(items);
+
+  // const renderImages = () => {
+  //   return imageList.map((image, index) => (
+  //     <img key={index} src={image.src} alt={image.alt} onClick={() => openPopup(index)} />
+  //   ));
+  // };
 
   return (
     <div className="diplomas-container container">
       <div className="diplomas-box box">
-        <h2 className='heading2'>Дипломи</h2>
-        <div className="slider">
+        <h2 className="heading2">Дипломи</h2>
+        <div className="carousel">
+          <div className="slides">
+            {items.map((image, index) => (
+              <img key={index} src={image.src} alt={image.alt} />
+            ))}
+          </div>
+          <div className="pagination-box">
+            <button className="prev-btn" onClick={prevSlide}>
+              &#10094;
+            </button>
+            <div className="pagination">
+              {currentIndex + 1} / {imageList.length}
+            </div>
+            <button className="next-btn" onClick={nextSlide}>
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        {/* <div className="slider">
           {renderImages()}
         </div>
         {isPopupOpen && (
           <div className="popup">
             <span className="close-btn" onClick={closePopup}>X</span>
             <img src={imageList[currentIndex].src} alt={imageList[currentIndex].title} />
-            <button onClick={prevSlide}>Previous</button>
+            <button onClick={prevSlide}>&#10094;</button>
             <div className="pagination">
               {currentIndex + 1} / {imageList.length}
             </div>
-            <button onClick={nextSlide}>Next</button>
+            <button onClick={nextSlide}>&#10095;</button>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
