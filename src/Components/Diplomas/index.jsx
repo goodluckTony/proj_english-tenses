@@ -14,41 +14,66 @@ const Diplomas = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const extendedList = imageList;
-  // const [isPopupOpen, setIsPopupOpen] = useState(false);
+  // const extendedList = imageList;
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  // const openPopup = (index) => {
-  //   setCurrentIndex(index);
-  //   setIsPopupOpen(true);
-  // };
-
-  // const closePopup = () => {
-  //   setIsPopupOpen(false);
-  // };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1) % imageList.length);
+  const openPopup = (index) => {
+    setCurrentIndex(index);
+    setIsPopupOpen(true);
   };
 
-  const nextSlide = () => {
-    setCurrentIndex((nextIndex) => (nextIndex + 1) % imageList.length);
+  const closePopup = () => {
+    setIsPopupOpen(false);
   };
 
-  const numberOfItemsToDisplay = 4;
-  const numberOfItemsToTake = Math.min(
-    numberOfItemsToDisplay,
-    imageList.length - currentIndex
-  );
-  console.log(imageList);
-  const items = imageList
-    .slice(currentIndex, currentIndex + numberOfItemsToTake)
-    .concat(imageList.slice(0, numberOfItemsToDisplay - numberOfItemsToTake));
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex - 1) % imageList.length);
+  // };
 
-  console.log(items);
+  // const nextSlide = () => {
+  //   setCurrentIndex((nextIndex) => (nextIndex + 1) % imageList.length);
+  // };
+
+  // const numberOfItemsToDisplay = 4;
+  // const numberOfItemsToTake = Math.min(
+  //   numberOfItemsToDisplay,
+  //   imageList.length - currentIndex
+  // );
+  // console.log(imageList);
+  // const items = imageList
+  //   .slice(currentIndex, currentIndex + numberOfItemsToTake)
+  //   .concat(imageList.slice(0, numberOfItemsToDisplay - numberOfItemsToTake));
+  // console.log(items);
 
   // const renderImages = () => {
   //   return imageList.map((image, index) => (
@@ -83,7 +108,7 @@ const Diplomas = () => {
           <Slider {...settings}>
             {imageList.map((img, idx) => (
               <div className="img-box" key={idx}>
-                <img key={idx} src={img.src} alt={img.alt} />
+                <img key={idx} src={img.src} alt={img.alt} onClick={() => openPopup(idx)} />
               </div>
             ))}
           </Slider>
@@ -91,18 +116,18 @@ const Diplomas = () => {
 
         {/* <div className="slider">
           {renderImages()}
-        </div>
+        </div> */}
         {isPopupOpen && (
           <div className="popup">
             <span className="close-btn" onClick={closePopup}>X</span>
-            <img src={imageList[currentIndex].src} alt={imageList[currentIndex].title} />
-            <button onClick={prevSlide}>&#10094;</button>
+            <img className="popup-img" src={imageList[currentIndex].src} alt={imageList[currentIndex].alt}/>
+            {/* <button onClick={prevSlide}>&#10094;</button>
             <div className="pagination">
               {currentIndex + 1} / {imageList.length}
             </div>
-            <button onClick={nextSlide}>&#10095;</button>
+            <button onClick={nextSlide}>&#10095;</button> */}
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
