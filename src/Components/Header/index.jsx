@@ -43,7 +43,7 @@ const Header = ({ redirectToRegistration }) => {
       <aside className={`menu-box ${isMenuOpen ? 'open' : ''}`} id='menu'>
         <div className='menu__logo-box'>
           <h2 className='menu__logo-icon'>LOGO</h2>
-          <a className='menu-icon-close' href="#" onClick={toggleMenu}></a>
+          <a className='menu-icon-close' onClick={toggleMenu}></a>
         </div>
         <nav>
           <ul className='menu__links-list' onClick={closeMenu}>
