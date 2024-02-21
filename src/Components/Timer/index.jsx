@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
 
-const Timer = ({ startTime }) => {
+const Timer = () => {
   // const classNames = `${customClassName ? customClassName : ''}`;
   // const className = `${bannerTimerStyles}`;
 
   const calculateTimeLeft = () => {
-    const difference = startTime - new Date().getTime();
+    const currentTime = new Date().getTime();
+    const endOfTheDay = new Date().setHours(23,59,59,999);
+    const difference = endOfTheDay - currentTime;
     let timeLeft = {};
 
     if (difference > 0) {
@@ -38,12 +40,15 @@ const Timer = ({ startTime }) => {
   };
 
   // const countdownFinished = days === 0 && hours === 0 && minutes === 0 && seconds === 0;
-  const countdownFinished = Object.keys(timeLeft).length === 0;
+
+  // const countdownFinished = Object.keys(timeLeft).length === 0;
+
+  const remainingTime = `${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
 
   return (
     <div className="banner-timer" >
-      {countdownFinished ? "00 : 00 : 00 : 00"
-        : `${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`}
+      {/* {countdownFinished ? "00 : 00 : 00 : 00" : remainingTime} */}
+      {remainingTime}
     </div>
   );
 };

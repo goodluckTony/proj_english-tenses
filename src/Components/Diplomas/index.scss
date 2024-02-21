@@ -109,6 +109,13 @@
         font-size: 24px;
         cursor: pointer;
         z-index: 10000;
+
+        width: 30px;
+        height: 30px;
+        background-image: url('../../assets/img/diplomas/popup-close.png');
+        background-position: center;
+        background-size: contain;
+        
       }
 
       .popup-img {

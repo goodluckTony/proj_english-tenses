@@ -35,8 +35,9 @@ const Diplomas = () => {
       {
         breakpoint: 480,
         settings: {
+          dots: true,
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 9
         }
       }
     ]
@@ -119,7 +120,7 @@ const Diplomas = () => {
         </div> */}
         {isPopupOpen && (
           <div className="popup">
-            <span className="close-btn" onClick={closePopup}>X</span>
+            <span className="close-btn" onClick={closePopup}></span>
             <img className="popup-img" src={imageList[currentIndex].src} alt={imageList[currentIndex].alt}/>
             {/* <button onClick={prevSlide}>&#10094;</button>
             <div className="pagination">
