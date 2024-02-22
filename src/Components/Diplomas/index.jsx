@@ -14,6 +14,7 @@ const Diplomas = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
@@ -35,9 +36,9 @@ const Diplomas = () => {
       {
         breakpoint: 480,
         settings: {
-          dots: true,
+          
           slidesToShow: 1,
-          slidesToScroll: 9
+          slidesToScroll: 1
         }
       }
     ]

@@ -17,19 +17,19 @@
     padding: 28px 128px;
 
     @include onDesktop {
-      padding: 28px 100px;
+      padding: 40px 100px;
 
     }
 
     @include onTablet {
       flex-direction: column;
-      padding: 28px 70px;
+      padding: 24px 70px;
 
     }
 
     @include onMobile {
       gap: 5px;
-      padding: 5px 10px;
+      padding: 8px 10px;
     }
     
 

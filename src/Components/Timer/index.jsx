@@ -42,7 +42,6 @@ const Timer = () => {
   // const countdownFinished = days === 0 && hours === 0 && minutes === 0 && seconds === 0;
 
   // const countdownFinished = Object.keys(timeLeft).length === 0;
-
   const remainingTime = `${formatTime(days)} : ${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
 
   return (
