@@ -24,9 +24,7 @@
 
     @include onMobile {
       margin: 0 10px;
-      // justify-content: center;
       align-items: center;
-      // padding: 60px 0 150px;
     }
 
     p, a, h2 {
@@ -138,22 +136,6 @@
           line-height: normal;
         }
 
-        // input {
-        //   padding: 14px 16px;
-        //   align-items: center;
-        //   gap: 10px;
-        //   border: 1px solid $color-white;
-        //   background:none;
-
-        //   color: $color-dim-gray;
-        //   text-align: start;
-        //   font-family: $family-manrope;
-        //   font-size: 15px;
-        //   font-style: normal;
-        //   font-weight: 400;
-        //   line-height: 150%;
-        // }
-
         button {
           padding: 13px 36px;
           align-items: center;
@@ -177,7 +159,6 @@
             color: #ffffff;
             background-color: #000000;
           }
-
         }
 
         .register-subbox {
@@ -204,10 +185,6 @@
               background-repeat: no-repeat;
               background-size: contain;
               cursor: pointer;
-              // fill: #FF8845;
-              // background-blend-mode: color;
-              // background-color: #FF8845;
-              // mix-blend-mode: color-burn;
             }
 
             .fb-icon {

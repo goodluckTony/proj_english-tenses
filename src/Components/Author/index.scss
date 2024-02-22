@@ -1,11 +1,9 @@
 @import "../../assets/style/index.scss";
 
 .author-container {
-  // width: 100%;
   padding-bottom: 50px;
 
   .author-box {
-    // padding: 120px 103px;
     display: flex;
     gap: 50px;
 
@@ -25,26 +23,20 @@
     }
 
     .title {
-      // width: 62%;
       display: flex;
       flex-direction: column;
       gap: 40px;
 
+      @include onMobile {
+        gap: 24px;
+      }
+
       h2 {
         color: $color-black;
         font-family: $family-manrope;
-        // font-size: 48px;
         font-style: normal;
         font-weight: 600;
-        line-height: 120%; /* 57.6px */
-
-        // @include onTablet {
-        //   font-size: 40px;
-        // }
-
-        // @include onMobile {
-        //   font-size: 30px;
-        // }
+        line-height: 120%;
       }
 
       .title-text {
@@ -69,17 +61,10 @@
           display: flex;
           flex-direction: column;
           gap: 12px;
-
-          // align-items: center;
-          // display: flex;
-          // gap: 7.5px;
-          // justify-content: center;
-
   
           .title-list-item {
             display: flex;
             align-items: center;
-            // flex-direction: row;
             gap: 16px;
             
             .title-svg {
@@ -94,31 +79,13 @@
             p {
               color: $color-black;
               font-family: $family-manrope;
-              // font-size: 16px;
               font-style: normal;
               font-weight: 400;
-              line-height: 150%; /* 24px */
-
-              // @include onMobile {
-              //   font-size: 12px;
-              // }
+              line-height: 150%;
             }
-
-            // &::before {
-            //   content: "";
-            //   display: inline-block;
-            //   // flex-direction: row;
-            //   margin-right: 20px;
-            //   background-image: url("../../assets/img/result/check-icon.svg");
-            //   background-size: contain;
-            //   background-repeat: no-repeat;
-            //   width: 24px;
-            //   height: 24px;
-            // }
           }
 
           .title-sublist {
-            // width: 50%;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -129,14 +96,9 @@
               p {
                 color: $color-black;
                 font-family: $family-manrope;
-                // font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 150%; /* 24px */
-  
-                // @include onMobile {
-                //   font-size: 12px;
-                // }
+                line-height: 150%;
               }
             }
           }

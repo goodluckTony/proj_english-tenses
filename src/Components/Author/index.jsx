@@ -6,7 +6,6 @@ const Author = () => {
   return (
     <div className='author-container container' id='author'>
       <div className='author-box box'>
-        {/* <div className='bg'></div> */}
         <img className='author-img' src={AuthorImg} alt="Author-Img" />
         <div className='title'>
           <h2 className='heading2'>Про автора</h2>

@@ -17,19 +17,14 @@ $color-rich-black: #030303;
 html, 
 body, * { 
   margin: 0; padding: 0; 
-  // margin: 0 auto;
 }
 
-body { /* ??? */
-  // max-width: 1440px;
+body {
   min-width: 320px;
   margin: 0 auto;
 }
 
 .container {
-  // min-width: 320px;
-  // max-width: 1440px;
-  // width: 100%;
   margin: 0 128px;
 }
 
@@ -86,15 +81,6 @@ body { /* ??? */
     font-size: 13px;
   }
 }
-
-// .container {
-//   // margin: 0 auto;
-//   // padding: 0 150px;
-//   width: 100%;
-// }
-
-
-
 
 @mixin onDesktop {
   @media (max-width: 1440px) {

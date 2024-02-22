@@ -1,7 +1,5 @@
 import React from 'react';
 import './index.scss';
-// import titleImg from '../../assets/img/course/course-bg.svg';
-// import titleImg from '../../assets/img/course/course-bg-2.png';
 
 const Course = ({ redirectToRegistration }) => {
 
@@ -28,7 +26,6 @@ const Course = ({ redirectToRegistration }) => {
         </div>
       </div>
       <div className='bg-box'></div>
-      {/* <img className='bg-container' src={titleImg} alt='course-img'/> */}
     </div>
   )
 }

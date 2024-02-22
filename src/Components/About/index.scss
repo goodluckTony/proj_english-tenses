@@ -1,7 +1,6 @@
 @import "../../assets/style/index.scss";
 
 .about-container {
-  // width: 100%;
   padding-bottom: 50px;
   
   @include onMobile {
@@ -9,8 +8,6 @@
   }
   
   .about-box {
-    
-    // padding: 120px 103px;
     display: flex;
     gap: 41px;
     align-items: center;
@@ -18,7 +15,6 @@
     @include onTablet {
       flex-direction: column;
     }
-    
     
     .about-photo {
       width: 40%;
@@ -31,23 +27,10 @@
       @include onTablet {
         width: 100%;
       }
-
-      // &::before {
-      //   content: "";
-      //   display: block;
-      //   background: url("../../assets/img/about/about-photo.svg"), no-repeat;
-      //   background-size: cover;
-      //   background-repeat: no-repeat;
-      //   background-position: 50% 50%;
-      //   width: 364px;
-      //   height: 402px;
-      //   // object-fit: contain;
-      // }
     }
 
     .about-title {
       width: 60%;
-      // padding-right: 150px;
       
       @include onTablet {
         width: 100%;
@@ -60,25 +43,15 @@
       h2 {
         color: $color-black;
         font-family: $family-manrope;
-        // font-size: 48px;
         font-style: normal;
         font-weight: 600;
-        line-height: 120%; /* 57.6px */
-
-        // @include onTablet {
-        //   font-size: 40px;
-        // }
-
-        // @include onMobile {
-        //   font-size: 30px;
-        // }
+        line-height: 120%;
       }
 
       p {
-        margin-top: 32px;
+        margin-top: 24px;
         color: $color-dim-gray;
         font-family: $family-inter;
-        // font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

@@ -1,6 +1,5 @@
 import React from 'react';
 import "./index.scss";
-// import aboutPhoto from "../../assets/img/about/about-photo.svg";
 import aboutPhoto from "../../assets/img/about/about-photo-2.png";
 
 const About = ({ redirectToRegistration }) => {

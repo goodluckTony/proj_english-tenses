@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import './index.scss';
-// import "../../assets/style/index.scss";
 
 const Header = ({ redirectToRegistration }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-
-    // const menu = document.getElementById('menu');
-    // menu.classList.toggle('open');
   };
 
   const closeMenu = () => {
@@ -17,7 +13,6 @@ const Header = ({ redirectToRegistration }) => {
   };
 
   return (
-    // <div className={`header-container container ${isMenuOpen ? 'menu-open' : ''}`}>
     <div className="header-container">
       <div className="header-box" id='header'>
         <div className='logo-box'>
