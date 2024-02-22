@@ -5,7 +5,7 @@
   background-color: $color-rich-black;
 
   
-  .box {
+  .footer-box {
     margin: 0 128px;
     padding: 60px 0 127px;
     
@@ -19,13 +19,14 @@
 
     @include onTablet {
       margin: 0 70px;
+      padding: 60px 0 150px;
     }
 
     @include onMobile {
       margin: 0 10px;
       // justify-content: center;
       align-items: center;
-      padding: 60px 0 150px;
+      // padding: 60px 0 150px;
     }
 
     p, a, h2 {

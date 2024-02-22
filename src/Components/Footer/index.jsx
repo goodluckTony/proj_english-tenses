@@ -18,7 +18,7 @@ const Footer = ({ redirectToRegistration }) => {
 
   return (
     <div className='footer-container'>
-      <div className='box'>
+      <div className='footer-box'>
         <div className='top-box'>
           <div className='logo-box'>
             <h2>LOGO</h2>
