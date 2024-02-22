@@ -53,8 +53,11 @@ const Diplomas = () => {
     setIsPopupOpen(true);
   };
 
-  const closePopup = () => {
-    setIsPopupOpen(false);
+  const closePopup = (event) => {
+    console.log(event.target)
+    if (!event.target.closest('.popup-img')) {
+      setIsPopupOpen(false);
+    }
   };
 
   // const prevSlide = () => {
@@ -119,8 +122,8 @@ const Diplomas = () => {
           {renderImages()}
         </div> */}
         {isPopupOpen && (
-          <div className="popup">
-            <span className="close-btn" onClick={closePopup}></span>
+          <div className="popup" onClick={closePopup}>
+            {/* <span className="close-btn" onClick={closePopup}></span> */}
             <img className="popup-img" src={imageList[currentIndex].src} alt={imageList[currentIndex].alt}/>
             {/* <button onClick={prevSlide}>&#10094;</button>
             <div className="pagination">
