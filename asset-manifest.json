@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.10f364b5.css",
-    "main.js": "/static/js/main.fe042178.js",
+    "main.css": "/static/css/main.c0cbabfe.css",
+    "main.js": "/static/js/main.7a320325.js",
     "static/media/author-bg-2.jpg": "/static/media/author-bg-2.daaa0ba493b452aa3a41.jpg",
     "static/media/course-bg-2.png": "/static/media/course-bg-2.58d0da3cdeb43bd3f1ff.png",
     "static/media/about-photo-2.png": "/static/media/about-photo-2.c3cce888200c2ade4841.png",
     "static/media/result-bg-2.png": "/static/media/result-bg-2.e0798da582ddb683cadc.png",
     "static/media/footer-logo.png": "/static/media/footer-logo.197258c71b352a8cec9a.png",
     "static/media/header-logo.png": "/static/media/header-logo.3e9f4e18f73a823afee8.png",
+    "static/media/pages-logo.png": "/static/media/pages-logo.3e9f4e18f73a823afee8.png",
     "static/media/target-btn-2.png": "/static/media/target-btn-2.202144595e2f8d6fc454.png",
     "static/media/check-icon.svg": "/static/media/check-icon.a2ed43b6c8a254e0d9db.svg",
     "static/media/fb-icon.svg": "/static/media/fb-icon.4820a85553502b0ede76.svg",
     "index.html": "/index.html",
     "static/media/insta-icon.svg": "/static/media/insta-icon.92d02d148f9b05a854ce.svg",
-    "main.10f364b5.css.map": "/static/css/main.10f364b5.css.map",
-    "main.fe042178.js.map": "/static/js/main.fe042178.js.map"
+    "main.c0cbabfe.css.map": "/static/css/main.c0cbabfe.css.map",
+    "main.7a320325.js.map": "/static/js/main.7a320325.js.map"
   },
   "entrypoints": [
-    "static/css/main.10f364b5.css",
-    "static/js/main.fe042178.js"
+    "static/css/main.c0cbabfe.css",
+    "static/js/main.7a320325.js"
   ]
 }
